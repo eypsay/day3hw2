@@ -15,31 +15,28 @@ public class Main {
 		student2.setFirstName("Ali");
 		student2.setLastName("Veli");
 		student2.setTakenCourse("Python");
-		
-		Student[] students= {student1,student2};
-		
-		Instructor instructor1= new Instructor();
+
+		Student[] students = { student1, student2 };
+
+		Instructor instructor1 = new Instructor();
 		instructor1.setId(1);
 		instructor1.setInstructorNumber(1111);
 		instructor1.setFirstName("Engin");
 		instructor1.setLastName("Demiroð");
 		instructor1.setGivenCourse("Java");
-		
-		Instructor instructor2= new Instructor();
+
+		Instructor instructor2 = new Instructor();
 		instructor2.setId(2);
 		instructor2.setInstructorNumber(2222);
 		instructor2.setFirstName("Ahmet");
 		instructor2.setLastName("De");
 		instructor2.setGivenCourse("C#");
-		
-		
-		
-		Instructor[] instructors= {instructor1,instructor2};
-		
 
-		StudentManager studentManager=new StudentManager();
+		Instructor[] instructors = { instructor1, instructor2 };
+
+		StudentManager studentManager = new StudentManager();
 		studentManager.getAll(students);
-		
+
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.addCourse(instructor1);
 

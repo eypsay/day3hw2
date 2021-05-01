@@ -3,6 +3,24 @@ package day3Hw2;
 public class Student extends User {
 	private int studentNumber;
 	private String takenCourse;
+	private String firstName;
+	private String LastName;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
 
 	public Student() {
 	}
